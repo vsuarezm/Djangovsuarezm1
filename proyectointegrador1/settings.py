@@ -78,8 +78,11 @@ WSGI_APPLICATION = 'proyectointegrador1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'evergreen',                     
+        'USER': 'evergreen@serverevergreen',                     
+        'PASSWORD': 'zftUYR85', 
+        'HOST': 'serverevergreen.postgres.database.azure.com'
     }
 }
 
